@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'dottedFonts';
+    src: url('./assets/fonts/dotty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dotted-Fonts {
+    font-family: 'dottedFonts' , sans-serif;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 40px;
+}
+
+.nav-link:hover {
+    color: #FFA500; 
+}
+
+
+  
