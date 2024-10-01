@@ -104,7 +104,7 @@
 
 <!-- Projects Section -->
 <!-- Projects Section with iframe -->
-<section id="projects" class="container mt-5">
+<section id="projects" class="container mt-5 min-vh-100">
   <h1 class="text-center dotted-Fonts">Projects</h1>
   
   <div class="row justify-content-center">
@@ -151,10 +151,93 @@
 
 
 
-  <!-- Footer -->
-  <footer class="mt-auto text-center py-3">
-      <p>&copy; 2024 Pranav Prasad</p>
-  </footer>
+<!-- Contact Section -->
+<section id="contact" class="container mt-5 min-vh-100">
+  <h1 class="text-center dotted-Fonts">Contact</h1>
+  
+  <div class="row justify-content-center mt-4">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+          <form action="your-contact-form-handler.php" method="POST">
+              <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-info w-100">Send Message</button>
+          </form>
+      </div>
+      
+      <!-- Contact Info with Icons -->
+      <div class="col-md-4 mt-4 mt-md-0">
+          <h4 class="text-center mb-4">Get in Touch</h4>
+          <ul class="list-unstyled">
+              <li class="mb-3">
+                  <i class="fas fa-map-marker-alt fa-lg text-info me-3"></i>
+                  P&P Food Products, Ernakulam, Kerala
+              </li>
+              <li class="mb-3">
+                  <i class="fas fa-envelope fa-lg text-info me-3"></i>
+                  pranavp.work@gmail.com
+              </li>
+              <li class="mb-3">
+                  <i class="fas fa-phone fa-lg text-info me-3"></i>
+                  +91 7012469793
+              </li>
+              <li class="mb-3">
+                  <i class="fas fa-globe fa-lg text-info me-3"></i>
+                  www.whatsparpadi.com
+              </li>
+          </ul>
+          
+          <!-- Google Maps iFrame -->
+          <div class="map-responsive mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.149354178554!2d76.28138267475829!3d10.004519372957535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d8d3d5e2fe1%3A0xcd29be216698b62a!2sP%26P%20Food%20Products!5e0!3m2!1sen!2sin!4v1727767563821!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container">
+      <div class="row">
+          <!-- Address Info -->
+          <div class="col-md-4 mb-4">
+              <h5>Address</h5>
+              <p>P&P Food Products,<br> Kochi, Kerala</p>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4">
+              <h5>Contact Info</h5>
+              <p><i class="fas fa-envelope text-info"></i> pranavp.work@gmail.com</p>
+              <p><i class="fas fa-phone text-info"></i> +91 7012469793</p>
+          </div>
+
+          <!-- Social Links -->
+          <div class="col-md-4 mb-4 text-center">
+              <h5>Follow Me</h5>
+              <a href="#" target="_blank" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" target="_blank" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" target="_blank" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#" target="_blank" class="text-light me-3"><i class="fab fa-github fa-lg"></i></a>
+          </div>
+      </div>
+
+      <div class="text-center mt-4">
+          <p>&copy; 2024 Pranav P. All Rights Reserved.</p>
+      </div>
+  </div>
+</footer>
 
   <!-- bootstrap script.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

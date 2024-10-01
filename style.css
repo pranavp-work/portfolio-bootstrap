@@ -123,6 +123,98 @@ footer {
     opacity: 1;  /* Show the overlay when hovering */
 }
 
+/* Contact Section */
+#contact h1 {
+    margin-bottom: 2rem;
+}
+
+#contact form {
+    background-color: #1e2638;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#contact label {
+    color: #b0b5c1;
+}
+
+#contact input, #contact textarea {
+    background-color: #2b364e;
+    color: #fff;
+    border: 1px solid #404a5b;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+#contact .list-unstyled {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+}
+
+#contact .list-unstyled li i {
+    color: #00bcd4;
+}
+
+#contact .list-unstyled li {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #9e9e9e;
+}
+
+footer a {
+    color: #9e9e9e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00bcd4;
+}
+
+/* Google Maps iframe container */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #contact .col-md-4 {
+        text-align: center;
+    }
+    footer .col-md-4 {
+        text-align: center;
+    }
+}
+
+
 /* Responsive iframe height */
 @media (max-width: 768px) {
     .project-frame {
