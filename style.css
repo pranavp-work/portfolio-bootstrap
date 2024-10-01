@@ -179,7 +179,12 @@ footer p {
     color: #9e9e9e;
 }
 
-footer a i{
+footer a i {
+    color: #9e9e9e;
+    text-decoration: none;
+}
+
+footer a {
     color: #9e9e9e;
     text-decoration: none;
 }
