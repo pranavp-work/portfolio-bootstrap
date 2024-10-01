@@ -11,47 +11,21 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-color: #141a26;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
-
-.container {
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
-}
-
-.dotted-Fonts {
-    font-family: 'dottedFonts' , sans-serif;
-    color: white;
-}
-
-/* .nav-link {
-    color: white;
-    font-size: 40px;
-}
-
-.nav-link:hover {
-    color: #FFA500; 
-} */
-
-/* Target the hamburger button icon */
-.navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 165, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
-}
-
 body {
     background-color: #1e1e1e;
     color: #f1f1f1;
 }
 
-.navbar {
-    padding: 1rem;
+.container {
+    padding: 20px;
+}
+
+.dotted-Fonts {
+    font-family: 'dottedFonts', sans-serif;
+}
+
+.navfontHeight {
+    font-size: 45px;
 }
 
 .navbar-nav .nav-link {
@@ -77,34 +51,12 @@ footer {
     color: #9e9e9e;
 }
 
-/* home */
-
-.homeOne {
-    margin-top: 400px;
-}
-
-/* about */
-
 .card {
     background-color: #1e2638;
     border-radius: 10px;
     padding: 20px;
-    width: 100%;
-    height: 35vh; /* 1/4th of the viewport height */
+    height: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 0.9em;
-    color: #b0b5c1;
 }
 
 .skills {
@@ -131,89 +83,49 @@ footer {
     color: #ffffff;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-/* Card styling for the section */
-.project-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 450px;
-    text-align: center;
-}
-
-/* Image stack styling */
-.image-stack {
+.project-frame {
     position: relative;
-    width: 400px;
-    height: 300px;
-    margin: 0 auto;
+    width: 100%;
+    height: 300px;  /* You can adjust the height */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.stacked-img {
+.website-preview {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.overlay-link {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: #fff;
+    text-decoration: none;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-/* Make sure the first image is visible by default */
-input#image1:checked ~ .images img:nth-child(1) {
-    opacity: 1;
+.overlay-link .overlay {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-input#image2:checked ~ .images img:nth-child(2) {
-    opacity: 1;
+.overlay-link:hover {
+    opacity: 1;  /* Show the overlay when hovering */
 }
 
-input#image3:checked ~ .images img:nth-child(3) {
-    opacity: 1;
-}
-
-/* Hide radio buttons */
-input[type="radio"] {
-    display: none;
-}
-
-/* Button styling */
-.btn {
-    display: inline-block;
-    cursor: pointer;
-    width: 12px;
-    height: 12px;
-    background-color: #ddd;
-    border-radius: 50%;
-    margin: 15px 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #999;
-}
-
-/* Optional: Style the buttons when checked */
-input#image1:checked ~ label[for="image1"] {
-    background-color: #555;
-}
-input#image2:checked ~ label[for="image2"] {
-    background-color: #555;
-}
-input#image3:checked ~ label[for="image3"] {
-    background-color: #555;
-}
-
-/* Images container */
-.images {
-    position: relative;
-    width: 100%;
-    height: 100%;
+/* Responsive iframe height */
+@media (max-width: 768px) {
+    .project-frame {
+        height: 200px;  /* Smaller iframe on mobile devices */
+    }
 }
